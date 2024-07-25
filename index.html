@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <main>
+
+        <section class="newitementry">
+            <form  id="itementryform" >
+                <label for="newitem">Enter a New To Do Item</label>
+                <input type="text" id="newitem" size="50" autocomplete="off" placeholder="Add New To Do Item" tabindex="0"/>
+                <button id="additem" class="button" title="Add New Item" aria-level="Add New Item to List" tabindex="0">+</button>
+            </form>
+        </section>
+        <section class="listcontener">
+            <div class="listtitle">
+                <h1>To Do List Items</h1>
+                <button id="clearbutton" class="button" title="Clear The List" aria-level="Remove all items from the list" tabindex="0">Clear</button>
+            </div>
+            <hr/>
+            <div id="listitems">
+                <div class="item">
+                    <input type="checkbox" id="1" tabindex="0">
+                    <label for="1">Eat</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="2" tabindex="0">
+                    <label for="2">Sleep</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="3" tabindex="0">
+                    <label for="3">Code</label>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
