@@ -4,12 +4,11 @@ $conteners-background-color: #f2f2f2;
 $contener-border-color: #000;
 $textbox-border-color:lightgrey;
 $button-text-color:#fff;
-$button-hover-color:#000;
 $add-button-color:#4caf50;
 $clear-button-color:#d30808;
 
 
-@mixin mp($size) {
+@mixin mq($size) {
     @media only screen and (min-width:$size) {
         @content;
     }
@@ -29,7 +28,7 @@ body {
     width: 100%;
     min-height: 100%;
 
-    @include mp(768px) {
+    @include mq(768px) {
         font-size: 22px;
     }
 }
